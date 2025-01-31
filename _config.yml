@@ -1,0 +1,62 @@
+# Example: https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
+
+title: "Blog 123"
+remote_theme: https://github.com/mmistakes/minimal-mistakes
+minimal_mistakes_skin: # "dark"
+logo: /assets/images/logo.png
+lsi: false
+safe: true
+source: blog
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+author:
+  name             : "Your Name"
+  avatar           : /assets/images/avatar.png
+  bio              : "Bio"
+  location         : "Somewhere"
+  email            : "myemail@example.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', '.travis.yml', 'vendor']
